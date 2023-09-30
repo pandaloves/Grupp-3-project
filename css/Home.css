@@ -1,0 +1,204 @@
+/* Include Variables.css in Home.css */
+@import url(“../Variables.css”);
+
+/* Main section starts */
+#main {
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+/* Advertisement-picture section starts */
+#main-img {
+  width: 50%;
+  height: 75%;
+  border-radius: 10%;
+}
+
+/* Advertsiemnt, introduction and contact sections start*/
+#welcome {
+  width: 50%;
+  height: 60%;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 20px;
+}
+
+/* Advertisement */
+#advertisement {
+  font-size: 2em;
+  font-family: var(--font-family-one);
+  color: var(--color);
+  grid-row: 1 / 2;
+}
+
+#adv-button {
+  grid-row: 2 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.adv-button {
+  background-color: var(--background-color-three);
+  border: none;
+  border-radius: 8%;
+  color: var(--color);
+  padding: 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  height: 40px;
+}
+
+/* Introduction */
+#intro-title {
+  grid-row: 3 / 4;
+  font-family: var(--font-family-one);
+  font-size: 35px;
+  color: var(--color);
+}
+
+#intro-text {
+  grid-row: 4 / 5;
+  font-family: var(--font-family-one);
+  font-size: 26px;
+  color: var(--color);
+}
+
+/* Contact */
+#touch-infor {
+  grid-row: 5 / 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.touch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+#phone-icon,
+#email-icon {
+  width: 25px;
+  height: 25px;
+}
+
+#phone-no,
+#email-addr {
+  padding-top: 35px;
+  font-family: var(--font-family-one);
+  font-size: 18px;
+  color: var(--color);
+}
+
+/* Media queries for responsiveness section starts*/
+
+/* Settings for the screen between 960px and 1200px (the smaller desktop screen) */
+@media (min-width: 960px) and (max-width: 1200px) {
+  #main-img {
+    width: 45%;
+  }
+
+  #welcome {
+    width: 55%;
+    row-gap: 18px;
+  }
+}
+
+/* Settings for the screen between 768px and 960px (tablets such as Ipad) */
+@media (min-width: 768px) and (max-width: 960px) {
+  #main-img {
+    width: 40%;
+  }
+
+  #welcome {
+    width: 60%;
+    row-gap: 15px;
+  }
+
+  #phone-icon,
+  #email-icon {
+    width: 23px;
+    height: 22px;
+  }
+
+  #phone-no,
+  #email-addr {
+    padding-top: 40px;
+    font-size: 16px;
+  }
+}
+
+/* Settings for the screen smaller than 768px (mobile phones) */
+@media (max-width: 768px) {
+  #main {
+    flex-direction: column;
+    row-gap: 8px;
+    padding-top: 10px;
+  }
+
+  #main-img {
+    width: 86%;
+    height: 210px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 0;
+  }
+
+  #welcome {
+    margin-top: 10px;
+    width: 80%;
+    row-gap: 12px;
+  }
+
+  #advertisement {
+    font-size: 1.6em;
+  }
+
+  #adv-button {
+    margin-top: 16px;
+    column-gap: 35px;
+  }
+
+  .adv-button {
+    font-size: 18px;
+    height: 36px;
+  }
+
+  #intro-title {
+    font-size: 28px;
+  }
+
+  #intro-text {
+    margin-top: -36px;
+    font-size: 20px;
+  }
+
+  .touch-container {
+    margin-top: -45px;
+    margin-bottom: 5px;
+    column-gap: 4px;
+  }
+
+  #phone-icon,
+  #email-icon {
+    width: 22px;
+    height: 21px;
+  }
+
+  #phone-no,
+  #email-addr {
+    padding-top: 60px;
+    font-size: 15px;
+  }
+}

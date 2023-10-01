@@ -186,6 +186,7 @@
 
   .touch-container {
     column-gap: 3px;
+    flex-direction: flex-start;
   }
 
   #phone-icon,

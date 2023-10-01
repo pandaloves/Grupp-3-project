@@ -142,6 +142,7 @@
 /* Settings for the screen smaller than 768px (mobile phones) */
 @media (max-width: 768px) {
   #main {
+    height: 100%;
     flex-direction: column;
     row-gap: 8px;
     padding-top: 10px;
@@ -167,7 +168,7 @@
 
   #adv-button {
     margin-top: 16px;
-    column-gap: 35px;
+    column-gap: 20px;
   }
 
   .adv-button {
@@ -195,7 +196,7 @@
 
   #phone-no,
   #email-addr {
-    padding-top: 75px;
     font-size: 14px;
+    margin-top: 20px;
   }
 }

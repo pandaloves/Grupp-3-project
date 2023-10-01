@@ -156,9 +156,9 @@
   }
 
   #welcome {
-    margin-top: 10px;
+    margin-top: 15px;
     width: 80%;
-    row-gap: 12px;
+    row-gap: 14px;
   }
 
   #advertisement {
@@ -171,7 +171,7 @@
   }
 
   .adv-button {
-    font-size: 18px;
+    font-size: 16px;
     height: 36px;
   }
 
@@ -180,25 +180,22 @@
   }
 
   #intro-text {
-    margin-top: -36px;
     font-size: 20px;
   }
 
   .touch-container {
-    margin-top: -45px;
-    margin-bottom: 5px;
-    column-gap: 4px;
+    column-gap: 3px;
   }
 
   #phone-icon,
   #email-icon {
-    width: 22px;
-    height: 21px;
+    width: 20px;
+    height: 20px;
   }
 
   #phone-no,
   #email-addr {
-    padding-top: 60px;
-    font-size: 15px;
+    padding-top: 75px;
+    font-size: 14px;
   }
 }

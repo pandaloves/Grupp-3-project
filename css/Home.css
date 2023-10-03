@@ -1,6 +1,11 @@
 /* Include Variables.css in Home.css */
 @import url(“../Variables.css”);
 
+/* General-setting section starts*/
+* {
+  height: 100%;
+}
+
 /* Main section starts */
 #main {
   margin: 0;

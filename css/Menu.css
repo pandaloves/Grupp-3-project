@@ -60,7 +60,7 @@
   font-family: var(--font-family-one);
 }
 .product-price {
-  font-family: var(--font-family-two);
+  font-family: var(--font-family-one);
 }
 
 @media (max-width: 820px) {
